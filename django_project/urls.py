@@ -20,3 +20,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
 ]
+
+# function view works directly:
+
+# from blog import views
+# urlpatterns = [
+#     path('', views.home, name='blog-home'),
+#     path('about/', views.about, name='blog-about'),
+# ]
